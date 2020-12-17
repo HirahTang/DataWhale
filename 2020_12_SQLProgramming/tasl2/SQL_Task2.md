@@ -19,19 +19,20 @@
 
     SELECT * FROM product 
     WHERE purchase_price = NULL;
-product中purchase_price值缺失的行的全部结果
+
 
 #### 2
 
     SELECT * FROM product 
     WHERE purchase_price <> NULL;
-product中purchase_price值不缺失的全部结果
+
 
 #### 3
 
     SELECT * FROM product 
     WHERE product_name > NULL;
-   product中
+    
+   返回值为空，条件语句应为product_name IS NULL 或者 product_name IS NOT NULL
 ### 2.3
 
 
